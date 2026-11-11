@@ -1,0 +1,17 @@
+/* 隐藏原生的拖拽手柄图标 */
+.alternate_greetings_list .drag-handle {
+    display: none !important;
+}
+
+/* 拖拽时的样式 */
+.alternate_greeting[draggable="true"] {
+    transition: opacity 0.2s, border 0.2s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+/* 鼠标悬停效果 */
+.alternate_greeting[draggable="true"]:hover {
+    background-color: rgba(0, 120, 215, 0.05);
+    cursor: move;
+}
